@@ -7,6 +7,6 @@ jobs:
                - name: 'Checkout code'
                  uses: actions/checkout@v2
                - name: 'Run custom action'
-                 uses: ./.github/workflows/action.yml
+                 uses: .github/workflows/action.yml
                  with:
                     myInput: 'Hello, world!'
