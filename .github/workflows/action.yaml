@@ -1,0 +1,12 @@
+name: 'Custom Action'
+description: 'A custom action to perform a specific task'
+inputs:
+  myInput:
+    description: 'An input for the action'
+    required: true
+outputs:
+  result:
+    description: 'The result of the action'
+runs:
+  using: 'node12'
+  main: 'index.js'
