@@ -1,0 +1,12 @@
+name: 'Run Custom Action'
+on: push
+jobs:
+   build:
+        runs-on: ubuntu-latest
+        steps:
+               - name: 'Checkout code'
+                 uses: actions/checkout@v2
+               - name: 'Run custom action'
+                 uses: ./.github/workflows/action.yml
+                 with:
+                    myInput: 'Hello, world!'
